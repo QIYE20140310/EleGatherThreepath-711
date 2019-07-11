@@ -1,0 +1,94 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="1" target="8" version="2">
+  <project Name="1">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00020000,FFFFFFFF;RWX 24000000,00080000,CDCDCDCD"
+      arm_target_device_name="STM32H750IB"
+      arm_target_interface_type="SWD"
+      debug_target_connection="Simulator"
+      link_linker_script_file="$(ProjectDir)/SEGGER_Flash.icf"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00020000;RAM RWX 0x24000000 0x00080000"
+      project_directory=""
+      project_type="Executable" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="main.c" />
+    </folder>
+    <folder Name="RTT Files">
+      <file file_name="SEGGER_RTT.c" />
+      <file file_name="SEGGER_RTT.h" />
+      <file file_name="SEGGER_RTT_Conf.h" />
+      <file file_name="SEGGER_RTT_Syscalls_SES.c" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="Cortex_M_Startup.s" />
+      <file file_name="HardFaultHandler.S" />
+      <file file_name="SEGGER_HardFaultHandler.c" />
+      <file file_name="SEGGER_THUMB_Startup.s" />
+    </folder>
+  </project>
+  <configuration
+    Name="Debug"
+    c_preprocessor_definitions="DEBUG"
+    gcc_debugging_level="Level 3"
+    gcc_optimization_level="None" />
+  <configuration
+    Name="Release"
+    c_preprocessor_definitions="NDEBUG"
+    gcc_debugging_level="None"
+    gcc_omit_frame_pointer="Yes"
+    gcc_optimization_level="Level 1" />
+  <project Name="Test_H750">
+    <configuration
+      Name="Common"
+      arm_architecture="v7EM"
+      arm_core_type="Cortex-M7"
+      arm_endian="Little"
+      arm_fp_abi="Hard"
+      arm_fpu_type="FPv5-SP-D16"
+      arm_linker_heap_size="1024"
+      arm_linker_process_stack_size="0"
+      arm_linker_stack_size="1024"
+      arm_linker_variant="SEGGER"
+      arm_simulator_memory_simulation_parameter="RX 08000000,00020000,FFFFFFFF;RWX 24000000,00080000,CDCDCDCD"
+      arm_target_device_name="STM32H750IB"
+      arm_target_interface_type="SWD"
+      debug_target_connection="J-Link"
+      link_linker_script_file="$(ProjectDir)/SEGGER_Flash.icf"
+      linker_output_format="hex"
+      linker_section_placements_segments="FLASH RX 0x08000000 0x00020000;RAM RWX 0x24000000 0x00080000"
+      project_directory="D:\Software\H750_P6_24"
+      project_type="Executable" />
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc" />
+      <file file_name="main.c" />
+    </folder>
+    <folder Name="RTT Files">
+      <file file_name="SEGGER_RTT.c" />
+      <file file_name="SEGGER_RTT.h" />
+      <file file_name="SEGGER_RTT_Conf.h" />
+      <file file_name="SEGGER_RTT_Syscalls_SES.c" />
+    </folder>
+    <folder Name="System Files">
+      <file file_name="Cortex_M_Startup.s" />
+      <file file_name="HardFaultHandler.S" />
+      <file file_name="SEGGER_HardFaultHandler.c" />
+      <file file_name="SEGGER_THUMB_Startup.s" />
+      <file file_name="H750_6_24/MDK-ARM/startup_stm32h750xx.s" />
+      <file file_name="H750_6_24/.mxproject" />
+      <file file_name="H750_6_24/H750_6_24.ioc" />
+    </folder>
+    <file file_name="H750_6_24/.mxproject" />
+  </project>
+</solution>

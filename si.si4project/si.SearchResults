@@ -1,0 +1,22 @@
+---- Watch_Loop Matches (13 in 4 files) ----
+dispLCD_Loop in lcd_rt625181.c (E5\Lib) :     Watch_Loop(channel_status);
+stm302.htm (E5\MDK-ARM\stm302) line 526 : <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 665 : <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 852 : <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 890 : <BR><BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 1460 : <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 1531 : <BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+stm302.htm (E5\MDK-ARM\stm302) line 1669 : <P><STRONG><a name="[107]"></a>Watch_Loop</STRONG> (Thumb, 326 bytes, Stack size 16 bytes, system_config.o(i.Watch_Loop))
+stm302.htm (E5\MDK-ARM\stm302) line 1670 : <BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = Watch_Loop &rArr; Disp_Sig &rArr; Disp_Ram &rArr; ht1622x_send_data &rArr; ht1622x_send_bits &rArr; ht1622_data_out &rArr; HAL_GPIO_Init
+stm302.htm (E5\MDK-ARM\stm302) line 1740 : <BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Watch_Loop
+System_Config.c (E5\Lib) line 323 : void Watch_Loop(unsigned char i)
+System_Config.h (E5\Lib) line 133 : void Watch_Loop(unsigned char i);
+---- Watch_Loop Search Errors Encountered (7) ----
+The following 7 files could not be processed:
+D:\E5_5_6\E5\Lib\CRC32.c : File could not be opened.
+D:\E5_5_6\E5\Lib\M2G.c : File could not be opened.
+D:\E5_5_6\E5\Lib\Server_Data.c : File could not be opened.
+D:\E5_5_6\E5\Lib\Server_Parse.c : File could not be opened.
+D:\E5_5_6\E5\si.si4project\si.SearchResults : File could not be opened.
+D:\E5_5_6\E5\si.si4project\si.si4project\si.SearchResults : File could not be opened.
+D:\E5_5_6\E5\Lib\Touchkey.c : File could not be opened.
